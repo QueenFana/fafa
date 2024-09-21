@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie-edge">
+    <meta name="author" content="SABOUTOU Fananatou">
+    <link rel="shortcut icon" type="image/x-icon" href="image/logo1.ico">
+    <title>Bienvenue sur KNE Group</title>
+</head>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    body {
+       height: 100%;
+       margin: 0;
+       color: #212529;
+   }
+
+  .container {
+     height: 100vh; 
+     display: flex;
+     justify-content: center; 
+     align-items: center; 
+    }
+
+    .vid {
+     max-width: 100%; 
+      height: auto;
+    }
+
+
+
+    
+</style>
+<body>
+
+    <div class="container">
+
+     <video id="myvideo" autoplay muted width="320" height="240"  src="image/video.mp4" class="vid"></video>
+    </div>
+    <script>
+        const video = document.getElementById("myvideo");
+        video.addEventListener('ended',() =>{
+            window.location.href = "index.html";
+
+        });
+    </script>
+</body>
+</html>

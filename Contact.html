@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-compatible" content="ie-edge">
+  <meta name="author" content="SABOUTOU Fananatou"><!--autrice-->
+  <!--SEO-->
+  <meta name="description" content="Découvrez nos services sur mesure pour la communication et marketing digital ainsi que la conception web">
+  <meta name="keywords" content="Communication digitale, Marketing digital, Conception de design graphique, conception de site web">
+  <meta name="robots" content="index, follow">
+  <!--opengraph-->
+  <meta property="og:title" content="Communication & Marketing digital" />
+  <meta property="og:description" content="Découvrez nos services sur mesure pour la communication et marketing digital ainsi que la conception web." />
+  <meta property="og:url" content="https://KNEGroup.org/services-web-app" />
+  <meta property="og:image" content="https://KNEGroup.org/image/logo0.png" />
+
+  <!--favicons-->
+  <link rel="icon"  type="image/x-icon" href="logo1.ico">
+  <link href="Public/boxicons-master/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Contacts - KNE Group</title>
+  </head>
+
+  <style>
+    .contact-section {
+      padding: 40px 20px;
+    }
+    .contact-info p {
+        margin: 5px 0;
+    }
+    .contact-form{
+      width:35%;
+    }
+    .map {
+      margin-top: 30px;
+    }
+
+    .map iframe {
+     width: 100%;
+     border: none;
+      height: 500px;
+    }
+    .card {
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+    .color:hover {
+      background-color: #4CAF50; 
+      color: #fff; 
+    }
+
+    .carte:hover{
+      transform: scale(1.05);
+    }
+    .car:hover{
+      color: black
+    }
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+    .form-control {
+      background-color: #cfcece;
+    }
+    
+    header{
+        background-image:url(image/com.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+     }
+     header::after{
+       content: '';
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       width: 100%;
+       height: 500px; /* Hauteur de la zone floue */
+       background: linear-gradient(transparent, rgba(62, 51, 90, 0.5)0.5); 
+       pointer-events: none; 
+      }
+  </style>
+<body>
+
+  <!--header-->
+  <header>
+      
+  
+    <div class="container"></div>
+      <nav class="sticky-top">
+         <!-- Bouton de navigation pour mobile -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"><i class="bx bx-toggler"></i></span>
+         </button>
+          
+        <ul class="nav-list" >
+          <a href="#" class="circle"><img src="image/logo0.jpg" style="width: 100px;border-radius: 50%;" ></a>
+          <li class="list"><a href="index.html"><strong>ACCUEIL</strong> </a></li>
+
+          <li class="list "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <strong>SERVICES</strong> 
+          </a>
+            <ul class="dropdown-menu" >
+              <li><a class="dropdown-item" href="Conseils.html"><strong>Conseils en immigration</strong></a></li>
+              <li><a class="dropdown-item" href="Comark.html"><strong>Communication&Marketing digital</strong></a></li>
+            </ul>
+          </li>
+
+          <li class="list"><a href="Galerie.html"><strong>GALERIE</strong> </a></li>
+          <li class="list"><a href="Contact.html"><strong>CONTACTS</strong> </a></li>
+          <button type="button" class="btn btn-primary  " ><a href="Rv.html">NOUS REJOINDRE</a></button>
+        </ul>  
+      </nav>
+    </div> 
+    <div class="garde">
+     <h1 class="text-center text-primary">CONTACT</h1>
+     <h6 class="mt-5 text-right">Voyagez avec nous à travers notre galerie.
+     </h6>
+   </div>
+  </header>
+  
+<!--section contact-->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="text-center mb-4 text-success">CONTACTEZ-NOUS</h2>
+    <div class="row">
+
+      <div class="col">
+        <div class="row">
+          
+          <div class="col-md-6 mb-4 carte">
+            <div class="card p-3 text-center">
+              <h5 class="card-title text-success"><i class="bx bx-mail-send"></i><strong>EMAIL</strong></h5>
+              <p class="card-text"><a href="mailto:Knegroup5@gmail.com">Knegroup5@gmail.com</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4 carte">
+            <div class="card p-3 text-center">
+              <h5 class="card-title text-success"><i class="bx bx-phone-call"></i><strong>APPELEZ-NOUS</strong></h5>
+              <p class="card-text">00228 70909035</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4 carte">
+            <div class="card p-3 text-center">
+              <h5 class="card-title text-success"><i class="bx bxs-map-alt"></i><strong>ADRESSE</strong></h5>
+              <p class="card-text">Djidjolé, immeuble gris KNE entre la maison d'Adébayor et le commissariat de djidjolé</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4 carte">
+            <div class="card p-3 text-center ">
+              <h5 class="card-title text-success"><i class="bx bx-hourglass"></i><strong>HORAIRES</strong> </h5>
+              <p class="card-text">Lundi - Vendredi : 9h00 - 18h00<br>
+                Samedi : 10h00 - 14h00<br>
+                Dimanche : Fermé</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Formulaire de Contact -->
+      <div class="col">
+        <div class="card p-3">
+          <h5 class="text-success text-center">BESOIN D'AIDE ?</h5><br>
+          <h2 class="card-title">LAISSEZ-NOUS UN MESSAGE</h2>
+          <form id="contactform" method="POST" action="https://script.google.com/macros/s/AKfycbx1MgJuUqdwz8Clfft_E9Vgr9lK92JwoyLwnpOREFfaiDSauqeFpTbQdo2RHdXJakEl/exec">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" id="name" placeholder="Entrer votre nom" name="name" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" id="email" placeholder="Entrer votre email" name="email" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="tel" id="tel" class="form-control" placeholder="Entrer votre contact" name="tel" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <textarea id="object" name="object" class="form-control" placeholder="Quel est l'objet de votre message?" required></textarea>
+              </div>
+            </div>
+            <div class="mb-3">
+              <textarea id="message" name="message" class="form-control" rows="5" placeholder="Entrez votre message (soyez bref & concis)" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+          </form>
+          
+          <div id="responseMessage"></div>
+          <script>
+            function submitForm() {
+              var form = document.getElementById('contactForm');
+              var formData = new FormData(form);
+  
+              // Faire une requête AJAX via la fonction fetch()
+              fetch('https://script.google.com/macros/s/AKfycbx1MgJuUqdwz8Clfft_E9Vgr9lK92JwoyLwnpOREFfaiDSauqeFpTbQdo2RHdXJakEl/exe', {
+               method: 'POST',
+               body: formData
+              })
+              .then(response => response.text())  // Récupérer la réponse texte du serveur
+              .then(data => {
+                document.getElementById('responseMessage').innerHTML = data;
+                alert('Formulaire soumis avec succès !');
+              })
+              .catch(error => {
+                document.getElementById('responseMessage').innerHTML = 'Erreur lors de la soumission du formulaire.';
+                alert('Erreur lors de la soumission.');
+               console.error('Erreur:', error);
+              });
+            }
+   
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte Google Maps -->
+    <div class="map mt-4">
+      <h5><i class="bx bx-map"></i>  Notre Localisation</h5>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.245898591684!2d-122.4194159846818!3d37.77492977975927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808e8f2e0b9b%3A0x36b7e0d9e0f8a9a8!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1650398878589!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!--Section footer-->
+<footer style="background: lightblue;" ><br>
+  <div class="container">
+    <div class="row">
+      <!-- Coordonnées -->
+      <div class="col-md-4">
+        <h5 class="footer-title">Nous Contacter</h5>
+        <p><strong>Adresse :</strong> Djidjolé, immeuble gris KNE entre la maison d'Adébayor et le commissariat de djidjolé, Lomé, Togo</p>
+        <p><strong>Téléphone :</strong> +228 70 90 90 35</p>
+        <p><strong>Email :</strong><a href="mailto:Knegroup5@gmail.com">Knegroup5@gmail.com</a></p>
+        <a href="#" class="circle text-center"><img src="image/logo0.jpg" style="width: 100px;border-radius: 50%;" ></a>
+      </div>
+
+      <!-- Liens rapides -->
+      <div class="col-md-4">
+        <h5 class="footer-title">Liens Utiles</h5>
+        <ul class="list-unstyled text-bg-dark">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="contact.html">Contactez-nous</a></li><br><br><br><br>
+          <p class="copy" >© 2024 KNE Group. Tous droits réservés.</p>
+        </ul>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="col-md-4">
+        <h5 class="footer-title">Suivez-nous</h5>
+        <div class="social-icons">
+          <p><i class="bx bxl-facebook"></i><a href="https://www.facebook.com/profile.php?id=61556915174946&mibextid=LQQJ4d" target="_blank">Facebook</a></p>
+          <p><i class="bx bxl-instagram"></i><a href="https://www.instagram.com/kne.group?igsh=MXJqeDFwNnh3OWV3bw%3D%3D&utm_source=qr" target="_blank">Instagram</a></p>
+          <p><i class="bx bxl-linkedin"></i><a href="https://www.linkedin.com/in/kne-group-a4a911329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Linkedin</a></p>
+          <p><i class="bx bxl-tiktok"></i><a href="https://www.tiktok.com/@knegroup1?_t=8po2OdeqyP8&_r=1" target="_blank">Tiktok</a></p>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

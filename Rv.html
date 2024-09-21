@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="SABOUTOU Fananatou">
+    <link rel="shortcut icon" type="image/x-icon" href="logo1.ico">
+    <link href="Public/boxicons-master/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Bienvenue à KNE Group</title>
+    <style>
+      body {
+        background-color: #d8b6b6;
+      }
+      .modal-backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    </style>
+</head>
+<body>
+
+    <!-- Fenêtre modale -->
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">Formulaire de contact</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                   <!-- Formulaire de messagerie -->
+                   <div class="col">
+                     <div class="card p-3">
+                       <h5 class="text-success text-center">BESOIN D'AIDE ?</h5><br>
+                       <h2 class="card-title">LAISSEZ-NOUS UN MESSAGE</h2>
+                     <form id="contactform" method="POST" action="https://script.google.com/macros/s/AKfycbx1MgJuUqdwz8Clfft_E9Vgr9lK92JwoyLwnpOREFfaiDSauqeFpTbQdo2RHdXJakEl/exec">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" id="name" placeholder="Entrer votre nom" name="name" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control" id="email" placeholder="Entrer votre email" name="email" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <input type="tel" id="tel" class="form-control" placeholder="Entrer votre contact" name="tel" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <textarea id="object" name="object" class="form-control" placeholder="Quel est l'objet de votre message?" required></textarea>
+              </div>
+            </div>
+            <div class="mb-3">
+              <textarea id="message" name="message" class="form-control" rows="5" placeholder="Entrez votre message (soyez bref & concis)" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+          </form>
+          
+          <div id="responseMessage"></div>
+          <script>
+            function submitForm() {
+              var form = document.getElementById('contactForm');
+              var formData = new FormData(form);
+  
+              // Faire une requête AJAX via la fonction fetch()
+              fetch('https://script.google.com/macros/s/AKfycbx1MgJuUqdwz8Clfft_E9Vgr9lK92JwoyLwnpOREFfaiDSauqeFpTbQdo2RHdXJakEl/exe', {
+               method: 'POST',
+               body: formData
+              })
+              .then(response => response.text())  // Récupérer la réponse texte du serveur
+              .then(data => {
+                document.getElementById('responseMessage').innerHTML = data;
+                alert('Formulaire soumis avec succès !');
+              })
+              .catch(error => {
+                document.getElementById('responseMessage').innerHTML = 'Erreur lors de la soumission du formulaire.';
+                alert('Erreur lors de la soumission.');
+               console.error('Erreur:', error);
+              });
+            }
+   
+          </script>
+                     </div>
+                   </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">J'ai compris</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script d'ouverture de la modale au chargement de la page -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#infoModal').modal('show');
+        });
+    </script>
+    
+</body>
+</html>
